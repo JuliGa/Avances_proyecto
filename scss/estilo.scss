@@ -1,0 +1,161 @@
+@import "colores";
+
+body {
+	font-family: 'Oswald', sans-serif; 
+	margin: 20px;
+}
+
+article{	
+	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	background-color:$colorDos;
+	margin: 4px;
+	.navBar {
+	    color: colorDos;
+		justify-content: space-between;
+		text-decoration: none;
+			.navBar__logo {
+				height: 70px;
+			}
+	}
+	nav {
+	 	background-image: url(file:///C:/Users/Julia/Desktop/CURSO%20PROGR/Desafio%20clase%204%20Cesar%20Sarmiento/assets/img/Supinthesea.jpg);
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+	 	font-size: 20px;
+	 	text-align: center;
+	 	height: 700px;
+	 }
+ }
+
+.barraMultimedia {
+	display: grid;
+	grid-template-columns: 630px 450px; 
+	padding-left: 80px;
+	grid-template-areas:
+		"video1 imag3";
+	grid-column-gap: 15px;
+	background-color: $colorTres;
+}
+
+.informacion {
+	.informacion__descripcion {
+		display: grid;
+		grid-template-columns: 810px 450px;
+		grid-template-rows: 200px 300px;
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+		grid-template-areas: "imag1 informacion__titulo1", "imag1 informacion__parrafo1";
+		background-color: $colorDos;
+	}
+}
+
+.informacionClases {
+	display: grid;
+	grid-template-columns: 480px 900px;
+	grid-template-rows: 200px 300px;
+	grid-column-gap: 15px;
+	grid-row-gap: 10px;
+	grid-template-areas: "informacion__titulo2 imag2", "informacion__parrafo2 imag2" ;
+	background-color: $colorTres;
+}
+
+.informacion__parrafo1 {
+	text-align: center;
+	border-top: solid 7px gray;
+	padding-top: 20px;
+}
+
+footer {
+	background-color: $colorDos;
+	margin: 1px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: $colorCuatro;
+}
+
+h2 {
+	font-weight: bold 700;
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: white;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: $colorCuatro;
+}
+
+p {
+	font-size: 25px;
+	color: rgb(77, 66, 82);	
+}
+.informacion__titulo1 {
+	margin: 20px;
+	padding-top: 40px;	
+}
+
+.informacion__parrafo2 {
+	font-weight: bold; 
+	font-weight: 500;
+	font-size: 25px;
+	color: $colorCuatro;
+	text-align: center;
+    border-top: solid 7px gray;
+    padding-top: 20px;
+  }
+
+#perfilEly {
+	line-height:200%;
+	font-style: italic;
+}
+
+table {
+	align-items: center;
+ 	border: 3px solid;
+ }
+
+.retiroSup {
+	background-color: $colorDos;
+	@extend .informacion__parrafo2;
+}
+
+ #tablaContacto th {
+  	background-color:#cccccc;
+  	border: 1px solid; 
+  	padding-left: 200px;
+ }
+
+#formulario	{
+	background-color: $colorUno;
+	height: 400px;
+	width: 400px;
+}
+
+.fitness-life {
+	background-color: $colorTres;
+	padding: 30px;
+	font-size: 30px;
+}
+
+.boton{
+	font-size: 30px;
+	background-color: $colorDos; 
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	border-radius: 20px;
+	align-items: middle;
+}
+
+.dropdown{
+	margin: 40px;
+}
