@@ -30,36 +30,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
 <body>
-	<header class="header">
+	<header >
 		<div class="navBar" id="menufijo">
 			<div class="row">
 				<div class="col-xs-12 col-lg-12">
 					<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-						  <a class="navbar-brand" href="#"></a>
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="navbar-toggler-icon"></span>
-						  </button>
-						  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						    <div class="navbar-nav">
-						      <img src="../assets/img/logoSup.png" alt="logoSup" width="80px" id="logo">
-						      <a class="nav-item nav-link" href="../index.html">HOME</a>
-						      <a class="nav-item nav-link active" href="#">PERFIL</a>
-						      <a class="nav-item nav-link" href="../pages/actividades.html">ACTIVIDADES</a>
-						      <a class="nav-item nav-link" href="../pages/fitness.html">VIDA FITNESS</a>
-						      <a class="nav-item nav-link" href="../pages/contacto.html">CONTACTO</a>
-						    </div>
-						  </div>
+						<div class="container">
+							<a class="navbar-brand" href="#"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="navbar-nav w-100 d-flex justify-content-between">
+									<img src="../assets/img/logoSup.png" alt="logoSup" width="80px" id="logo">
+									<a class="nav-item nav-link" href="../index.html">HOME </a>
+									<a class="nav-item nav-link active" href="#">PERFIL<span
+											class="sr-only">(current)</span></a>
+									<a class="nav-item nav-link" href="../pages/actividades.html">ACTIVIDADES</a>
+									<a class="nav-item nav-link" href="../pages/fitness.html">VIDA FITNESS</a>
+									<a class="nav-item nav-link" href="../pages/contacto.html">CONTACTO</a>
+								</div>
+							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
-	<br>
-	<br>
+	<aside class="front">
 		<nav class="container">
-			<aside>
-				<div class="row">
+			<div class="row">
 				<div class="col-xs-12 col-lg-12">
 					<h1 class="tituloGeneral">PERFIL</h1> 
 					<br>
@@ -68,24 +71,27 @@
 					Toda mi vida ha sido dedicada única y exclusivamente al fitness, y de ahí ha venido el impulso de fusionar el pilates, pinceladas de yoga y fitness sobre una tabla de Stand Up Paddle, que es otra de mis pasiones, consiguiendo así  la combinación perfecta, equilibrio cuerpo, mente y naturaleza"</p>
 				</div>
 			</div>
-			</aside>
+		
 		</nav>
-	<div class="infoEly">
-		<p>Founder <a href="https://www.instagram.com/pachamamarketbcn/" target="_blank">@pachamamarketbcn</a></p>
-		<p> valuencer #travelwithely</p>
-		<p> @nike sport Talent <a href="https://www.instagram.com/boxbarcelona_homeofsport/" target="_blank">@boxbarcelona_homeofsport</a></p>
-		<p> Ambassador <a href="https://www.instagram.com/wbarcelona/" target="_blank">@wbarcelona</a> & <a href="https://www.instagram.com/oceanic.global/" target="_blank">@oceanic.global</a></p>
-	</div>
-	</header>	
-	
-	<article class="slides2">
-		<div class="textoImagenes2">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto itaque distinctio nihil sit asperiores doloribus, odit, ipsum cupiditate facilis, quam velit assumenda quisquam officia omnis quos repellat ipsa dolorum!</p>
 
-		<a title="Redes Sociales" href="https://www.instagram.com/ely_pilatessupbeach/" target="_blank"><img src="../assets/img/logos.png" alt="logos" height="50px" /></a>
+		<div class="infoEly">
+			<p>Founder <a href="https://www.instagram.com/pachamamarketbcn/" target="_blank">@pachamamarketbcn</a></p>
+			<p> valuencer #travelwithely</p>
+			<p> @nike sport Talent <a href="https://www.instagram.com/boxbarcelona_homeofsport/" target="_blank">@boxbarcelona_homeofsport</a></p>
+			<p> Ambassador <a href="https://www.instagram.com/wbarcelona/" target="_blank">@wbarcelona</a> & <a href="https://www.instagram.com/oceanic.global/" target="_blank">@oceanic.global</a></p>
+		</div>
+	</aside>
+
+</header>	
+	
+	<br>
+	<article class="slides2 row my-3">
+		<div class="textoImagenes2 col-lg-5 col-md-12 col-sm-12 mt-3">
+			<p>Poniendo el corazon en cada actividad, Ely te demuestra con su sonrisa y energia positiva que no hace falta ser el mejor para poder disfrutar de las olas y adentrarte sin miedos hacia el mar</p>
+			
 		</div>
 		
-		<div class="imagenes1">
+		<div class="imagenes1 col-lg-7 col-md-12 col-sm-12">
 		<div class="contanier-fluid">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
@@ -95,13 +101,13 @@
 				  </ol>
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img class="d-block w-100" src="../assets/img/metitationEly.jpg" alt="Ely 4" height="450px">
+				      <img class="d-block w-100" src="../assets/img/metitationEly.jpg" alt="Ely 4" class="img-fluid">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-100" src="../assets/img/pilatesYoga.jpg" alt="Ely 5" height="450px">
+				      <img class="d-block w-100" src="../assets/img/pilatesYoga.jpg" alt="Ely 5" class="img-fluid">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-100" src="../assets/img/yoga1.jpg" alt="Ely 6" height="450px">
+				      <img class="d-block w-100" src="../assets/img/yoga1.jpg" alt="Ely 6" class="img-fluid">
 				    </div>
 				   </div>
 				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -116,43 +122,57 @@
 		</div>
 		</div>
 	</article>
+
+	<br>
 				
-		<div class="informacionEly">	
-			<img src="../assets/img/imag1.jpg" alt="ely" id="imag2" height="460px">
-			<p class="informacion__parrafo3"> 
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus incidunt, officia eveniet fugit facilis, et nisi, provident culpa quia quas neque, quo praesentium ab. Sit laborum itaque ducimus necessitatibus, est.</p>
+	<div class="informacionEly row shadow bg-light m-5 p-2">
+		<div class="col-lg-7 col-md-12 col-sm-12">
+			<video class="w-100" controls>
+			  <source src="../assets/video/costaRica.mp4" type="video/mp4">
+			 	Your browser does not support the video
+			</video>
 		</div>
+		<div class="col-lg-5 col-md-12 col-sm-12">	
+			<p class="informacion__parrafo3"> 
+				Ely esta de viaje constemente. Te invita a disfrutar con ella cada paso desde sus redes, tratando de respirar cada rincón y preparar todo lo que pueda para hacerte una guia donde explicarte que cosas tienes que tener en cuenta para ver.
+				Te enseñara a vivir la vida desde la aventura, la conciencia, el respeto a la madre tierra y hacia uno mismo.</p>
+		</div>
+	</div>
 
 	<footer>
-	
-     <div id="container">
-         <div id="part1">
-             <div id="companyinfo"> <a id="sitelink" href="../pages/actividades.html">Los Esperamos!</a>
-                 <p id="title">Apuntate a nuestras clases</p>
-             </div>
-             <div id="explore">
-                 <p id="txt1">Explora</p> <a class="link" href="../pages/actividades.html">Actividades</a> <a class="link" href="../pages/fitness.html">VidaFitness</a> <a class="link" href="../index.html">Home</a> <a class="link" href="../pages/contacto.html">Contacto</a>
-             </div>
-             <div id="visit">
-                 <p id="txt2">Nuestra Tienda</p>
-                 <p class="text">Tablas SUP </p>
-                 <p class="text">78 Bhulabhai Desai Road </p>
-                 <p class="text">Barcelona 400 026 </p>
-                 <p class="text">Phone: (22) 2363-3611 </p>
-             </div>
-             <div id="legal">
-                 <p id="txt3">Legal</p> <a class="link1" href="#">Terms and Conditions</a> <a class="link1" href="#">Private Policy</a>
-             </div>
-             <div id="subscribe">
-                 <p id="txt4">Subscribete</p>
-                 <form> <input id="email" type="email" placeholder="Email"> </form> <a class="waves-effect waves-light btn">Subscribirse</a>
-                 <p id="txt5">Connect With US</p> <i class="fab fa-facebook-square social fa-2x"></i> <i class="fab fa-linkedin social fa-2x"></i> <i class="fab fa-twitter-square social fa-2x"></i>
-             </div>
-         </div>
-         <div id="part2">
-             <p id="txt6"><i class="material-icons tiny"> copyright</i>copyright 2019 BBbootstrap - All right reserved</p>
-         </div>
-     </div>	
-</footer>
+		<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<a id="sitelink" href="pages/actividades.html">Los Esperamos!</a>
+					<p id="title">Apuntate a nuestras clases</p>
+			</div>
+			<div class="col-4">
+				<p id="txt2">Nuestra Tienda - Tablas SUP</p>
+				
+					<p class="text">Calle Bhulabhai 78 </p>
+					<p class="text">Barcelona 400 026 </p>
+					
+			</div>
+			<div class="col-4">
+				<p id="txt5">Conectate con nosotros</p>
+
+					<a href="https://www.facebook.com/ely.merino.12" target="blank">
+						<i class="fab fa-facebook-square social fa-2x"></i>
+					</a>
+
+					<a href="https://www.youtube.com/channel/UCBpyve3ke3VEMcL8Evr41Hg/featured" target="blank">
+						<i class="fab fa-youtube-square social fa-2x"></i>
+					</a>
+
+					<a href="https://www.instagram.com/ely_pilatessupbeach/" target="blank">
+						<i class="fab fa-instagram social fa-2x"></i>
+					</a>
+			</div>
+		</div>
+		</div>
+		<div id="part2">
+			<p id="txt6" class="text-right"><i class="material-icons tiny"> copyright</i>poweredBy CEDANIRUN - All right reserved</p>
+		</div>
+	</footer>
 </body>
 </html>

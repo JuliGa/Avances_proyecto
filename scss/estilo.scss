@@ -3,27 +3,37 @@
 body {
 	font-family: 'Oswald', sans-serif; 
 	margin: 5px;
+    overflow-x: hidden !important;
 }
+
+html {
+    scroll-behavior: smooth; 
+    overflow-x: hidden !important;   
+}
+
 
 article{	
 	font-family: 'Nunito', sans-serif;
 }
 
-header {
-	background-image: url(../assets/img/sant-sebastia-1-min.jpg);
-		.navBar {
-		background-color: rgba(255, 255, 255, 0.6);
+.header {
+	background-image: url(../assets/img/elyawaya.jpg);
+    background-attachment: fixed;
+		.navbar-nav {
 		margin: 4px;
 		position: sticky-top;
 	    color: colorDos;
-		justify-content: space-between;
-		text-decoration: none;
+        display: flex;
+		justify-content: center;
+       	text-decoration: none;
 			.navBar__logo {
 				height: 70px;
 			}
 	}
 	nav {
 	 	background-position: center;
+        display: flex;
+        justify-content: center;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-size: cover;
@@ -33,11 +43,12 @@ header {
 	 }
  }
 
-.header {
-	background-image: url(../assets/img/supsunset.jpg);
-	background-position: center;
+.front {
+	background-image: url(../assets/img/front.jpg);
+    padding-top: 100px;
+	
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
 	font-size: 20px;
 	text-align: center;
@@ -47,15 +58,37 @@ header {
 	background-image: url(../assets/img/supaddle.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
 	font-size: 20px;
 	text-align: center;
 }
+
+.header3 {
+    background-image: url(../assets/img/elyfitness.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header4 {
+    background-image: url(../assets/img/ely4.jpg);
+    padding-top: 50px;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
+    text-align: center;
+}
+
 .infoEly {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.4);
 	padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .multimedia {
@@ -71,45 +104,32 @@ header {
 
 .informacion {
 	.informacion__descripcion {
-		display: grid;
-		grid-template-columns: 810px 450px;
-		grid-template-rows: 200px 300px;
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
-		grid-template-areas: "imag1 informacion__titulo1", "imag1 informacion__parrafo1";
 		background-color: $colorDos;
 	}
 }
 
-.slides {
-	display: grid;
-		grid-template-columns: 500px 750px;
-		grid-template-rows: 185px 300px;
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
-		grid-template-areas: "imagenes1, textoImagenes";
-		background-color: $colorDos;
+.vida-fitness {
+        background-color: $colorCinco;
+        padding: 30px;
 }
 
 .slides2 {
-	display: grid;
-		grid-template-columns: 500px 800px;
-		grid-template-rows: 185px 250px;
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
-		grid-template-areas: "textoImagenes, imagenes1";
 		background-color: $colorDos;
 }
 
 .slides3{
-	display: grid;
-		grid-template-columns: 500px 800px;
-		grid-template-rows: 185px 250px;
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
-		grid-template-areas: "textoImagenes3, imagenes3";
 		background-color: $colorDos;
+        padding: 20px;
 }
+
+.dropdown-actividades{
+    background-image: url(../assets/img/beachyoga.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 50px;
+}
+
 .textoImagenes {
 	margin-top: 10px;
 	align-items: center;
@@ -125,30 +145,18 @@ header {
 	text-align: center;
 	padding: 20px;
 }
+
 .informacionClases {
-	display: grid;
-	grid-template-columns: 520px 860px;
-	grid-template-rows: 200px 300px;
-	grid-column-gap: 15px;
-	grid-row-gap: 10px;
-	grid-template-areas: "informacion__titulo2 imag2", "informacion__parrafo2 imag2" ;
-	background-color: $colorTres;
+	background-color: $colorCinco;
 	margin-bottom: 50px;
 }
 
 .informacionEly {
-	display: grid;
-	grid-template-columns: 680px 560px;
-	grid-template-rows: 200px 300px;
-	grid-column-gap: 15px;
-	grid-row-gap: 10px;
-	grid-template-areas: "informacion__titulo2 imag2", "informacion__parrafo2 imag2" ;
-	background-color: gray;
+	background-color: $colorCinco;
 	margin-bottom: 50px;
 }
 .informacion__parrafo1 {
 	text-align: center;
-	border-top: solid 7px gray;
 	padding-top: 20px;
 }
 
@@ -189,7 +197,7 @@ p {
 
 .informacion__titulo1 {
 	margin: 20px;
-	padding-top: 40px;	
+    padding: 10px;
 }
 
 .informacion__parrafo2 {
@@ -198,7 +206,6 @@ p {
 	font-size: 25px;
 	color: $colorCuatro;
 	text-align: center;
-    border-top: solid 7px gray;
     padding-top: 20px;
     padding-left: 20px;
   }
@@ -206,9 +213,7 @@ p {
 .informacion__parrafo3 {
 	font-weight: 500;
 	font-size: 25px;
-	color: $colorTres;
 	text-align: center;
-    border-top: solid 5px gray;
     padding-top: 20px;
     padding-left: 20px;
   }
@@ -219,8 +224,8 @@ p {
 }
 
 table {
-	align-items: center;
- 	border: 3px solid;
+  	align-items: center;
+ 	border: 1px;
  }
 
 .retiroSup {
@@ -228,16 +233,15 @@ table {
 	@extend .informacion__parrafo2;
 }
 
- #tablaContacto th {
-  	background-color:#cccccc;
-  	border: 1px solid; 
-  	padding-left: 200px;
+ #tablaActividades th {
+  	background-color: $colorCinco;
+  	
+  	
  }
 
 #formulario	{
 	background-color: $colorUno;
-	height: 400px;
-	width: 400px;
+	
 }
 
 .fitness-life {
@@ -246,14 +250,54 @@ table {
 	font-size: 30px;
 }
 
-.boton{
-	font-size: 30px;
+.boton1{
+    /*display: grid;
+     grid-template-columns:510px 750px;
+     grid-template-rows: 120px 250px;
+     grid-column-gap: 15px;
+     grid-row-gap: 15px;
+     grid-template-areas: "titulofit1 fit1", "parrafofit1 fit1";*/
+    font-size: 30px;
 	background-color: $colorDos; 
 	padding: 20px;
 	margin-bottom: 20px;
 	margin-top: 40px;
 	border-radius: 20px;
 	align-items: middle;
+     .titulofit1 {font-size: 35px;} 
+}
+
+.boton2{
+    /*display: grid;
+     grid-template-columns:590px 710px;
+     grid-template-rows: 120px 250px;
+      grid-column-gap: 15px;
+     grid-row-gap: 15px;
+      grid-template-areas: "fit2 titulofit2", "fit2 parrafofit2";*/
+    background-color: $colorDos; 
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    align-items: middle;
+        .titulofit2 {font-size: 35px;} 
+}
+
+.boton3{
+    /* display: grid;
+     grid-template-columns:560px 700px;
+     grid-template-rows: 120px 250px;
+     grid-column-gap: 15px;
+     grid-row-gap: 15px;
+     grid-template-areas: "titulofit3 fit3", "parrafofit3 fit3";*/
+    font-size: 30px;
+    background-color: $colorDos; 
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    align-items: middle;
+     .titulofit3 {font-size: 35px;} 
 }
 
 .dropdown{
@@ -272,6 +316,17 @@ table {
 	  margin-top: 70px;
 }
 
+.tituloGeneral2{
+    text-align: center;
+     font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 2.5rem;
+      line-height: 4rem;
+      letter-spacing: 0.8rem;
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+              background-clip: text;
+}
 .texto2 {
 	font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	  font-size: 20px;
@@ -282,7 +337,7 @@ table {
 	  border-radius: 20px;
 }
 
-footer-->
+
 
 #container {
     width: 100%;
@@ -292,28 +347,20 @@ footer-->
 #part1 {
     width: 100%;
     height: 280px;
-    background-color: #292929
+    background-color: $colorUno;
 }
 
 #part2 {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: gray;
     position: relative;
     top: -15px
 }
 
-#companyinfo {
-    width: 18%;
-    height: 280px;
-    position: relative;
-    left: 4%;
-    top: 30px
-}
-
 #sitelink {
     font-size: 35px;
-    color: #f44336
+    color: #f44336;
 }
 
 #sitelink:hover {
@@ -324,7 +371,7 @@ footer-->
     color: gray;
     position: relative;
     top: 0px;
-    font-size: 14.1px
+    font-size: 25px
 }
 
 #detail {
@@ -332,20 +379,12 @@ footer-->
     font-size: 16px
 }
 
-#explore {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -235px;
-    left: 29%
-}
-
 #txt1,
 #txt2,
 #txt3,
 #txt4,
 #txt5 {
-    color: white;
+    color: black;
     font-size: 20px
 }
 
@@ -353,7 +392,7 @@ footer-->
     display: flex;
     width: 90px;
     height: 40px;
-    color: #aaa7a7;
+    color: gray;
     background-color: transparent;
     border-top: 2px solid white;
     position: relative;
@@ -365,46 +404,23 @@ footer-->
     color: #e65100
 }
 
-#visit {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -515px;
-    left: 42%
-}
 
 .text {
-    color: #aaa7a7;
+    color: gray;
     font-size: 14px;
     margin-top: -10px
-}
-
-#legal {
-    width: 14%;
-    height: 280px;
-    position: relative;
-    top: -800px;
-    left: 59.5%
 }
 
 .link1 {
     display: flex;
     width: 150px;
     height: 40px;
-    color: #aaa7a7;
+    color: gray;
     background-color: transparent;
     border-top: 2px solid white;
     position: relative;
     top: -10px;
     margin-top: 7px
-}
-
-#subscribe {
-    position: relative;
-    top: -1080px;
-    left: 78%;
-    width: 14%;
-    height: 280px
 }
 
 #email {
@@ -435,12 +451,12 @@ footer-->
     color: #3B579D
 }
 
-.fa-linkedin:hover {
-    color: #007BB6
+.fa-youtube-square:hover {
+    color: #c4302b
 }
 
-.fa-twitter-square:hover {
-    color: #2CAAE1
+.fa-instagram:hover {
+    color: #e1306c
 }
 
 #txt6 {
@@ -479,10 +495,9 @@ footer-->
 }
 
 @media only screen and (max-width:850px) {
-    #companyinfo {
-        position: relative;
-        left: 3%
-    }
+
+    .tituloGeneral{
+        font-size: 40px;
 
     #txt6 {
         position: relative;
@@ -497,11 +512,7 @@ footer-->
         font-size: 15px
     }
 
-    #explore {
-        position: relative;
-        top: -240px;
-        left: 26%
-    }
+
 
     #sitelink {
         font-size: 25px
@@ -515,35 +526,15 @@ footer-->
         width: 60px
     }
 
-    #visit {
-        position: relative;
-        top: -520px;
-        left: 37%
-    }
 
     .text {
         font-size: 13px
     }
 
-    #legal {
-        position: relative;
-        top: -800px;
-        left: 54%
-    }
 
-    #subscribe {
-        position: relative;
-        top: -1080px;
-        left: 76%;
-        width: 20%
-    }
 
     #txt5,
-    .social {
-        position: relative;
-        left: -110%;
-        top: px
-    }
+
 
     #email,
     .btn {
@@ -554,4 +545,27 @@ footer-->
     #part1 {
         height: 250px
     }
+}
+
+@media only screen and (max-width:550px) {
+   
+    .texto2 {
+        margin: 20px;
+    }
+    .tituloGeneral {
+        font-size: 40px
+    }
+    #sitelink {
+        font-size: 20px
+    }
+    #txt6 {
+        font-size: 16px
+    }
+    
+    #title {
+        font-size: 15px
+    }
+
+   
+}
 }
